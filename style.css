@@ -1,0 +1,168 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to right,#0f0c29  , #302b63, #24243e  );
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.title{
+  font-size: 40px;
+}
+
+.nav-option ul{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.nav-option ul li{
+  list-style: none;
+  position: relative;
+}
+.nav-option ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 1s;
+  padding-bottom: 15px;
+}
+.nav-option ul li a:hover{
+  color: #03fee1;
+  border-bottom:5px solid #03fee1;
+  
+}
+#drop{
+  position: absolute;
+  margin-top: 0px;
+  display: none;
+  transition: 1s;
+}
+
+
+#drop ul{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top,#0f0c29, #0f0c29);
+}
+#drop ul li {
+  padding: 10px 25px;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+#drop ul li a{
+  font-size: 20px;
+  font-weight: 900;
+  transition: 1s;
+}
+
+#drop ul li:hover{
+  background:#03fee1;
+}
+
+#drop ul li a:hover{
+  color: black;
+  
+}
+.team{
+  position: absolute;
+  background: #000;
+  margin-left: 124px;
+  margin-top: -32px;
+  display: none;
+}
+.team-2:hover{
+  .team{
+    display: block;
+  }
+}
+
+.hamberger-manu{
+  display: none;
+  height: 80px;
+  width: 80px;
+  padding-top: 25px;
+  padding-left: 25px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.hamberger-manu i{
+  font-size: 30px;
+}
+.hamberger-manu:hover{
+  background: #03fee1;
+  color: black;
+}
+
+#manu {
+  background: #000;
+  width: 360px;
+  position: absolute;
+  margin-left: -303px;
+  margin-top: 25px;
+ text-align: center;
+ border: 2px solid red;
+ display: none;
+ 
+
+
+
+
+ 
+}
+#manu ul li:hover{
+  background: #03fee1;
+}
+
+
+#manu ul {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+#manuul li {
+  list-style:none;
+  padding: 10px 0px;
+ 
+ 
+}
+#manu ul li a{
+  text-decoration: none;
+  color: white;
+}
+.nav-option-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+}
+.name{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width:900px) {
+  .nav-option{
+    display: none;
+  }
+
+  .hamberger-manu{
+    display: block;
+  }
+  
+}
+
